@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Playeras</title>
+  <link rel="stylesheet" href="playeras.css" />
+</head>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html.html">INICIO</a></li>
+        <li><a href="series.html">SERIES</a></li>
+        <li><a href="peliculas.html">PELÍCULAS</a></li>
+        <li><a href="niños.html">NIÑOS Y FAMILIA</a></li>
+        <li><a href="personajes.html">PERSONAJES</a></li>
+        <li><a href="mercancia.html">MERCANCIA</a></li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" href="inicio.css" />
+  </header>
+<body>
+  <h1>TIENDA DE MOCHILAS </h1>
+  <h2>aqui encontraras las mejores playeras de tus personajes favoritos y tambien de las series animadas que mas te gustan </h2>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\61bXvZt6iAL._UF894,1000_QL80_.jpg" alt="Playera CN">
+      <h3>Rigby </h3>
+      <p>Precio: Bs160</p>
+      <button onclick="comprar('Mochila Rigby', 160)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\1fd4b4fe7fd95cac7b04533869e3d67d.jpg" alt="Playera Dexter">
+      <h3>Peluche Dulce princesa </h3>
+      <p>Precio: Bs80</p>
+      <button onclick="comprar('Peluche Dulce princesa', 80)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\1cbef6b7e518e5ec96c7e51f9051804a.jpg" alt="Playera Coraje">
+      <h3>Peluche princesa flama </h3>
+      <p>Precio: Bs150</p>
+      <button onclick="comprar('Peluche princesa flama', 150)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\73b9b1e4b82e51059988121425e786b1.jpg" alt="Playera CN">
+      <h3>Peluche Fiona </h3>
+      <p>Precio: Bs90</p>
+      <button onclick="comprar('Peluche Fiona', 90)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\b6b856c595b1b2d9a562257573a68f2e.jpg" alt="Playera Dexter">
+      <h3>Peluche rey helado y grumosa </h3>
+      <p>Precio: Bs170</p>
+      <button onclick="comprar('Peluche rey helado y grumosa', 170)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\2ad5b7c4db52bc0be2fc5d4f917ace96.jpg" alt="Playera Coraje">
+      <h3>Peluche escandalosos </h3>
+      <p>Precio: Bs100</p>
+      <button onclick="comprar('Peluche escandalosos', 100)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito</h2>
+    <p>Total de compras: <span id="cantidad">0</span></p>
+    <p>Valor total: Bs<span id="total">0</span></p>
+    <ul id="detalle"></ul>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <button onclick="comprarcarrito()">COMPRAR</button>
+  </div>
+
+  <script src="precios.js"></script>
+</body>
+</html>

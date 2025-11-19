@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Playeras</title>
+  <link rel="stylesheet" href="playeras.css" />
+</head>     
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html.html">INICIO</a></li>
+        <li><a href="series.html">SERIES</a></li>
+        <li><a href="peliculas.html">PELÍCULAS</a></li>
+        <li><a href="niños.html">NIÑOS Y FAMILIA</a></li>
+        <li><a href="personajes.html">PERSONAJES</a></li>
+        <li><a href="mercancia.html">MERCANCIA</a></li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" href="inicio.css" />
+  </header>
+<body>
+  <h1>Tienda de Playeras</h1>
+  <h2>aqui encontraras las mejores playeras de tus personajes favoritos y tambien de las series animadas que mas te gustan </h2>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\103_1400x.webp" alt="Playera CN">
+      <h3>Billy y MANDY </h3>
+      <p>Precio: Bs100</p>
+      <button onclick="comprar('Playera super poderosas', 100)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\71GNsYXsNkL._UY1000_.jpg" alt="Playera Dexter">
+      <h3>Playera fin el humano</h3>
+      <p>Precio: Bs80</p>
+      <button onclick="comprar('Playera fin el humano', 80)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\238160-camiseta-hombre-dexter-s-laboratory-manga-corta-1.webp" alt="Playera Coraje">
+      <h3>Playera Dexter </h3>
+      <p>Precio: Bs50</p>
+      <button onclick="comprar('Playera Dexter', 50)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\cartoon-network-trio-flying-logo-black-t-shirt-1.jpg" alt="Playera CN">
+      <h3>PODEROSAS </h3>
+      <p>Precio: Bs90</p>
+      <button onclick="comprar('Playera turtugas ninja', 90)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\238236.webp" alt="Playera Dexter">
+      <h3>Playera Dexxter</h3>
+      <p>Precio: Bs70</p>
+      <button onclick="comprar('Playera Dexter', 70)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\172_885fbe6a-b4d0-4653-9bea-e44650c81048_480x480_crop_center.webp" alt="Playera Coraje">
+      <h3>Playera Scooby Doo </h3>
+      <p>Precio: Bs100</p>
+      <button onclick="comprar('Playera Scooby Doo', 100)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito</h2>
+    <p>Total de compras: <span id="cantidad">0</span></p>
+    <p>Valor total: Bs<span id="total">0</span></p>
+    <ul id="detalle"></ul>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <button onclick="comprarcarrito()">COMPRAR</button>
+  </div>
+
+  <script src="precios.js"></script>
+</body>
+</html>

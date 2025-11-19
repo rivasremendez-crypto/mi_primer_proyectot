@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #00111f, #000);
+  color: #fff;
+}
+
+.menu {
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition:  0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+  background-color: #004477;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.titulo {
+  text-align: center;
+  margin: 30px 0;
+  color: #00ffff;
+  font-size: 2em;
+}
+
+.grid-personajes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 50px 50px;
+}
+
+.tarjeta {
+  background: linear-gradient(to right, #0c2c52, #02111f);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+ 
+.tarjeta img:hover{
+        transform: scale(2.05);
+}
+.tarjeta h2 {
+  color: #ffcc00;
+  margin: 10px 0;
+}
+
+.tarjeta p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+@media (max-width: 900px) {
+  .grid-personajes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-personajes {
+    grid-template-columns: 1fr;
+  }
+  .menu{
+  flex-direction: column;
+  text-align: center;
+  }
+}

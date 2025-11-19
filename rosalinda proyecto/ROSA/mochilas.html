@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Playeras</title>
+  <link rel="stylesheet" href="playeras.css" />
+</head>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html.html">INICIO</a></li>
+        <li><a href="series.html">SERIES</a></li>
+        <li><a href="peliculas.html">PELÍCULAS</a></li>
+        <li><a href="niños.html">NIÑOS Y FAMILIA</a></li>
+        <li><a href="personajes.html">PERSONAJES</a></li>
+        <li><a href="mercancia.html">MERCANCIA</a></li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" href="inicio.css" />
+  </header>
+<body>
+  <h1>TIENDA DE MOCHILAS </h1>
+  <h2>aqui encontraras las mejores playeras de tus personajes favoritos y tambien de las series animadas que mas te gustan </h2>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\img_46036_d9f07ec21fb14618556b6ef5bb27d3a0_1.jpg" alt="Playera CN">
+      <h3>Mochila Cartoon Network </h3>
+      <p>Precio: Bs200</p>
+      <button onclick="comprar('Mochila Cartoon Network', 200)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\drawstring_bag,x600-pad,600x600,f8f8f8.jpg" alt="Playera Dexter">
+      <h3>Mochila colores </h3>
+      <p>Precio: Bs180</p>
+      <button onclick="comprar('Mochila colores', 180)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\61o-JM29bjL._UY1000_.jpg" alt="Playera Coraje">
+      <h3>mochila naranjita </h3>
+      <p>Precio: Bs250</p>
+      <button onclick="comprar('mochila naranjita', 250)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\dark-cn-we-bare-bears-aesthetic-wi5tfroqty3nu9fh.webp" alt="Playera CN">
+      <h3>Mochila ositos </h3>
+      <p>Precio: Bs290</p>
+      <button onclick="comprar('Mochila ositos', 290)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\71QYRKolCxL._UY1000_.jpg" alt="Playera Dexter">
+      <h3>Mochila casa verde </h3>
+      <p>Precio: Bs170</p>
+      <button onclick="comprar('Mochila casa verde', 170)">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="C:\Users\PC16\Desktop\rosalinda proyecto\ROSA\drawstring_bag,x600-pad,600x600,f8f8f8.u3.jpg" alt="Playera Coraje">
+      <h3>Mochila BMO </h3>
+      <p>Precio: Bs100</p>
+      <button onclick="comprar('Mochila BMO', 100)">Comprar</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito</h2>
+    <p>Total de compras: <span id="cantidad">0</span></p>
+    <p>Valor total: Bs<span id="total">0</span></p>
+    <ul id="detalle"></ul>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <button onclick="comprarcarrito()">COMPRAR</button>
+  </div>
+
+  <script src="precios.js"></script>
+</body>
+</html>
