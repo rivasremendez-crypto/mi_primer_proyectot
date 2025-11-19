@@ -1,2 +1,3 @@
-# mi_primer_proyectot
-este es mi primer proyecto en github
+# descargar los archivos para este proyecto
+## instalar el software
+## ejecutar
